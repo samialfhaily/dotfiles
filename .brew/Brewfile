@@ -1,0 +1,17 @@
+# Formulae
+brew "autojump"
+brew "findutils"
+brew "git"
+brew "git-lfs"
+nrew "make"
+brew "md5sha1sum"
+brew "nano"
+brew "swiftlint"
+brew "swift-protobuf"
+brew "wget"
+brew "zsh"
+
+# Casks
+cask "google-chrome"
+cask "hex-fiend"
+cask "visual-studio-code"
