@@ -10,12 +10,6 @@ PACKAGE_MANAGER="/opt/homebrew"
 export MANPATH="$PACKAGE_MANAGER/share/man:$MANPATH"
 export PATH="$PACKAGE_MANAGER/bin:$PACKAGE_MANAGER/sbin:$HOME/bin:$PACKAGE_MANAGER/opt/make/libexec/gnubin:$PATH"
 
-# pyenv
-PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
-
 # zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH="$HOME/.zsh/remote/.oh-my-zsh"
@@ -48,8 +42,7 @@ export EDITOR="nano"
 export THEOS=$HOME/Developer/theos
 
 # fastlane
-. ~/.fastlane/completions/completion.zsh
-
+# . ~/.fastlane/completions/completion.zsh
 safe_source ~/.fastlane/completions/completion.sh
 
 # autojump
