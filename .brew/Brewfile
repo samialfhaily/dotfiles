@@ -10,6 +10,7 @@ brew "swiftlint"
 brew "swift-protobuf"
 brew "wget"
 brew "zsh"
+brew "sqlite"
 
 # Casks
 cask "google-chrome"
