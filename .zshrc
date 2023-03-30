@@ -61,3 +61,6 @@ safe_source ~/.rvm/scripts/rvm
 
 # custom
 safe_source $HOME/.zshrc-custom
+
+# gpg
+export GPG_TTY=$TTY
