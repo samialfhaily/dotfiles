@@ -11,6 +11,7 @@ brew "swift-protobuf"
 brew "wget"
 brew "zsh"
 brew "sqlite"
+brew "gnupg"
 
 # Casks
 cask "google-chrome"
