@@ -7,4 +7,4 @@ alias pi='ssh pi@raspberrypi.local'
 
 # GRNVS
 alias vms="ssh svm@grnvs.net"
-alias vm="root@svm0424.net.in.tum.de"
+alias vm="ssh root@svm0424.net.in.tum.de"
