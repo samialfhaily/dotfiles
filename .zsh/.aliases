@@ -3,8 +3,4 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias cls="clear && printf '\e[3J'"
 
 # raspberrypi
-alias pi='ssh pi@raspberrypi.local'
-
-# GRNVS
-alias vms="ssh svm@grnvs.net"
-alias vm="ssh root@svm0424.net.in.tum.de"
+alias pi='ssh sami@pi.local'
