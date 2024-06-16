@@ -56,8 +56,11 @@ safe_source $PACKAGE_MANAGER/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/c
 export GOPATH="$HOME/.go"
 
 # rvm
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$HOME/.rvm/bin:$PATH"
 safe_source ~/.rvm/scripts/rvm
+
+# gem
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
 # custom
 safe_source $HOME/.zshrc-custom
