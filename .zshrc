@@ -4,11 +4,7 @@ safe_source() {
   fi
 }
 
-PACKAGE_MANAGER=/usr
 PACKAGE_MANAGER="/opt/homebrew"
-
-export MANPATH="$PACKAGE_MANAGER/share/man:$MANPATH"
-export PATH="$PACKAGE_MANAGER/bin:$PACKAGE_MANAGER/sbin:$HOME/bin:$PACKAGE_MANAGER/opt/make/libexec/gnubin:$PATH"
 
 # zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -35,35 +31,5 @@ source $HOME/.zsh/.aliases
 
 ZSH_HIGHLIGHT_STYLES[comment]="fg=#6272a4"
 
-# configuration
-export EDITOR="nano"
-
-# theos
-export THEOS=$HOME/Developer/theos
-
-# fastlane
-# . ~/.fastlane/completions/completion.zsh
-safe_source ~/.fastlane/completions/completion.sh
-
 # autojump
 safe_source $PACKAGE_MANAGER/etc/profile.d/autojump.sh
-
-# google-cloud
-safe_source $PACKAGE_MANAGER/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-safe_source $PACKAGE_MANAGER/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-
-# go
-export GOPATH="$HOME/.go"
-
-# rvm
-export PATH="$HOME/.rvm/bin:$PATH"
-safe_source ~/.rvm/scripts/rvm
-
-# gem
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
-
-# custom
-safe_source $HOME/.zshrc-custom
-
-# gpg
-export GPG_TTY=$TTY

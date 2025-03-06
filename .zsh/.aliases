@@ -1,6 +1,2 @@
-alias x86='arch -x86_64'
+# dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias cls="clear && printf '\e[3J'"
-
-# raspberrypi
-alias pi='ssh sami@pi.local'
